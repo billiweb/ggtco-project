@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8efff;
+  border-radius: 15px;
+  width: 1336px;
+  height: 1024px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+.left-column {
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 20px;
+  width: 20%;
+}
+.left-column img {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 3px dotted black;
+}
+.left-column h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.left-column p {
+  margin: 0;
+}
+.left-column .profile-text {
+  margin-bottom: 50px;
+}
+.main-column {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.maim-top-area {
+  display: flex;
+  justify-content: space-between;
+}
+.main-column button {
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 0px 30px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.main-bottom-area {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+.right-column {
+  margin: 0 20px;
+  width: 20%;
+}
+.music-area {
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.weather-area {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.weather-area p {
+  color: white;
+  margin: 5px;
+}
+#temp {
+  font-size: 30px;
+  margin: 0;
+}
+#today {
+  font-size: 12px;
+  padding-top: 10px;
+}
+.weather-image {
+  margin: 8px 0 0 20px;
+}
+footer {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
