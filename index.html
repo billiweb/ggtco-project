@@ -28,11 +28,25 @@
             <h3>심비트리님의 다이어리</h3>
             <button>글 작성하기</button>
           </div>
-          <div class="main-bottom-area">메인 컨텐츠</div>
+          <div class="main-bottom-area">
+            <p>메인</p>
+          </div>
         </div>
         <div class="right-column">
           <div class="music-area">
-            <p>음악 플레이어</p>
+            <p>My Music Player</p>
+            <div class="album"></div>
+
+            <div class="button-area">
+              <img src="/images/play.png" id="play-icon" />
+            </div>
+          </div>
+          <div class="quote-area">
+            <p id="quote-text"></p>
+            <p id="quote-author"></p>
+            <button id="quote-button" onclick="getRandomQuote()">
+              명언 가져오기
+            </button>
           </div>
           <div class="weather-area">
             <div class="weather-data">
@@ -50,7 +64,14 @@
       <footer>
         <p>Copyright 2024. simbitree all rights reserved</p>
       </footer>
-      <script src="/src/app.js"></script>
+
+      <audio id="my-music">
+        <source src="/music/music.mp3" type="audio/mp3" />
+      </audio>
+
+      <script src="/src/weather.js"></script>
+      <script src="/src/music.js"></script>
+      <script src="/src/quote.js"></script>
     </div>
   </body>
 </html>

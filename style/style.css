@@ -61,6 +61,7 @@ main {
   padding: 0px 30px;
   margin: 10px 0;
   border-radius: 10px;
+  cursor: pointer;
 }
 .main-bottom-area {
   flex: 1;
@@ -70,17 +71,74 @@ main {
   padding: 20px;
 }
 .right-column {
+  display: flex;
+  flex-direction: column;
   margin: 0 20px;
   width: 20%;
 }
+
+/* music player css */
 .music-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
   background-color: #ffffff;
   border: 2px solid black;
   border-radius: 10px;
   padding: 20px;
-  height: 300px;
   margin-bottom: 20px;
 }
+
+.album {
+  width: 150px;
+  height: 150px;
+  background-image: url("/images/artwork.jpg");
+  background-size: cover;
+}
+
+.button-area {
+  display: flex;
+  align-items: center;
+}
+
+.button-area img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#play-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* quote css */
+.quote-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+#quote-button {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* weather css */
 .weather-area {
   display: flex;
   flex-direction: row;
@@ -92,17 +150,23 @@ main {
   color: white;
   margin: 5px;
 }
+.weather-data {
+  margin-left: 7px;
+  margin-right: 20px;
+}
 #temp {
-  font-size: 30px;
+  font-size: 32px;
   margin: 0;
 }
 #today {
   font-size: 12px;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 .weather-image {
   margin: 8px 0 0 20px;
 }
+
+/* footer css */
 footer {
   display: flex;
   height: 100px;
