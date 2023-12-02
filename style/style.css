@@ -91,10 +91,9 @@ main {
   margin-bottom: 20px;
 }
 
-.album {
+#artwork {
   width: 150px;
   height: 150px;
-  background-image: url("/images/artwork.jpg");
   background-size: cover;
 }
 
