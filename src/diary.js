@@ -1,7 +1,7 @@
-const supabaseUrl = "https://utjjshvehdmjvjpmxahm.supabase.co";
-const supabaseKey =
+const SUPABASE_URL = "https://utjjshvehdmjvjpmxahm.supabase.co";
+const SUPABASE_KEY =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV0ampzaHZlaGRtanZqcG14YWhtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDE2MjE2MDAsImV4cCI6MjAxNzE5NzYwMH0.2QlVefVPltGzVynyH9pHb1aSXWCSEQoji_Xnp1lA2eA";
-const database = supabase.createClient(supabaseUrl, supabaseKey);
+const database = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // console.log(database);
 
