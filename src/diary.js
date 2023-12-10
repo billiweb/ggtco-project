@@ -125,6 +125,11 @@ const editDiary = async (id) => {
       const newTitle = document.querySelector("#title").value;
       const newContent = document.querySelector("#content").value;
 
+      if (!newTitle || !newContent) {
+        alert("제목과 내용을 입력해주세요.");
+        return;
+      }
+
       // 스토리지에 이미지 업로드
       const fileName = `diary_${Date.now()}`;
       await database.storage.from("images").update(fileName, newFile);
