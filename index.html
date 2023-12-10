@@ -42,27 +42,30 @@
                   </div>
                 </label>
                 <input type="file" name="image" id="image" accept="image/*" />
-
-                <input
-                  type="text"
-                  name="title"
-                  id="title"
-                  placeholder="제목을 입력해 주세요."
-                />
-                <textarea
-                  name="content"
-                  id="content"
-                  placeholder="내용을 입력해 주세요."
-                  maxlength="300"
-                  rows="5"
-                ></textarea>
-                <button id="save">저장하기</button>
+                <div id="modalTextArea">
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="제목을 입력해 주세요."
+                  />
+                  <textarea
+                    name="content"
+                    id="content"
+                    placeholder="내용을 입력해 주세요."
+                    maxlength="300"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div id="modalButtonArea">
+                  <button id="save">저장하기</button>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="main-bottom-area">
-            <ul id="diaryList"></ul>
+            <div id="diaryList"></div>
           </div>
         </div>
 

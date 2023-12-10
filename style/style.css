@@ -150,12 +150,48 @@ main {
   display: none;
 }
 
+#myModal p {
+  font-size: 12px;
+  color: gray;
+}
+
+#modalTextArea {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+#myModal input {
+  font-size: 12px;
+  border: none;
+  border-bottom: 1px dotted black;
+  padding: 7px 10px;
+  background-color: #00ff0000;
+}
+
+#myModal textarea {
+  font-size: 12px;
+  border: none;
+  padding: 7px 10px;
+  background-color: #00ff0000;
+}
+
+#modalButtonArea {
+  display: flex;
+  justify-content: center;
+}
+
+#save {
+  width: 150px;
+}
+
 .main-bottom-area {
   flex: 1;
   background-color: #ffffff;
   border: 1px solid black;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 30px;
   overflow: auto; /* 스크롤바 표시 설정 */
 }
 
@@ -285,4 +321,41 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+}
+
+/* diary css */
+#diaryList .diaryListTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+#diaryList p {
+  font-size: 11px;
+  width: 70px;
+}
+
+#diaryList button {
+  border: none;
+  font-size: 10px;
+  padding: 0 5px;
+}
+
+#diaryList .diaryListBottom {
+  border-bottom: 1px dotted black;
+}
+
+#diaryList H3 {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+#diaryList H4 {
+  font-size: 10px;
+  padding-bottom: 30px;
+  margin: 0;
+  font-weight: 400;
+}
+
+#diaryTop {
+  background-color: black;
 }

@@ -25,15 +25,19 @@ const fetchDiaries = async () => {
     diaryList.innerHTML = "";
 
     diaries.map((diary) => {
-      const listItem = document.createElement("li");
+      const listItem = document.createElement("div");
       listItem.innerHTML = `
-        <div>
+        <div class="diaryListTop">
         <p>${diary.created_at}</p>
+        <div>
         <button onclick="editDiary(${diary.id})">수정하기</button>
         <button onclick="deleteDiary(${diary.id}, '${diary.image_url}')">삭제하기</button>
-        <img src="${diary.image_url}" alt="diary image" style="width: 400px; height: 250px; object-fit: cover;" />
-          <p>${diary.title}</p>
-          <p>${diary.content}</p>
+        </div>
+        </div>
+        <div class="diaryListBottom">
+        <img src="${diary.image_url}" alt="diary image" style="width: 500px; height: 280px; object-fit: cover;" />
+          <h3>${diary.title}</h3>
+          <h4>${diary.content}</h4>
         </div>
       `;
 
