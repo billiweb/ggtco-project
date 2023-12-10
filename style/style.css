@@ -5,27 +5,35 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 .layout {
   display: flex;
   flex-direction: column;
   background-color: #e8efff;
   border-radius: 15px;
-  width: 1336px;
-  height: 1024px;
+  width: 1024px;
+  height: 768px;
 }
+
 header {
   display: flex;
   justify-content: center;
-  height: 200px;
+}
+
+header img {
+  width: 250px;
+  margin-top: 30px;
 }
 
 main {
+  height: 550px;
   display: flex;
   flex: 1;
 }
+
 .left-column {
   background-color: #ffffff;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
   margin: 0 20px;
   padding: 20px;
@@ -37,58 +45,145 @@ main {
   border-bottom: 3px dotted black;
 }
 .left-column h3 {
+  font-size: 16px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
 .left-column p {
+  font-size: 12px;
   margin: 0;
 }
 .left-column .profile-text {
   margin-bottom: 50px;
 }
+
 .main-column {
   display: flex;
   flex-direction: column;
   width: 60%;
 }
-.maim-top-area {
+
+.main-top-area {
   display: flex;
   justify-content: space-between;
 }
+
+.main-top-area p {
+  font-size: 12px;
+}
+
 .main-column button {
+  height: 30px;
   background-color: #ffffff;
-  font-size: 16px;
-  padding: 0px 30px;
-  margin: 10px 0;
-  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 5px;
   cursor: pointer;
 }
+
+/* 모달창 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  width: 80%;
+  max-width: 400px;
+  height: 80%;
+  max-height: 450px;
+  margin: 12% auto;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: translateX(6%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#imgPreview {
+  height: 200px;
+  border: 1px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#imgPreview img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#image {
+  display: none;
+}
+
 .main-bottom-area {
   flex: 1;
   background-color: #ffffff;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
   padding: 20px;
+  overflow: auto; /* 스크롤바 표시 설정 */
 }
+
 .right-column {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   margin: 0 20px;
   width: 20%;
 }
 
 /* music player css */
 .music-area {
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1;
   background-color: #ffffff;
-  border: 2px solid black;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid black;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 20px;
+}
+
+.music-area p {
+  margin: 7px;
 }
 
 .album {
@@ -104,8 +199,8 @@ main {
 }
 
 .button-area img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid black;
   border-radius: 100%;
   padding: 10px;
@@ -118,17 +213,62 @@ main {
   height: 30px;
 }
 
+/* weather css */
+.weather-area {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  border-radius: 10px;
+}
+.weather-area p {
+  color: white;
+  margin: 5px;
+}
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+}
+
+#area {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#temp {
+  flex-grow: 3;
+  font-size: 25px;
+  margin: 0;
+}
+#today {
+  flex-grow: 2;
+  font-size: 12px;
+  margin: 0;
+}
+
+.weather-image {
+  position: relative;
+  top: 4px;
+  left: 30px;
+}
+
+.weather-image img {
+  width: 70px;
+  height: 70px;
+  padding: 20px 0px;
+}
+
 /* quote css */
 .quote-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
-  border: 2px solid black;
+  font-size: 12px;
+  border: 1px solid black;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 20px;
-  height: 200px;
 }
 
 #quote-button {
@@ -138,38 +278,11 @@ main {
   border-radius: 10px;
 }
 
-/* weather css */
-.weather-area {
-  display: flex;
-  flex-direction: row;
-  background-color: #000000;
-  padding: 10px 15px;
-  border-radius: 10px;
-}
-.weather-area p {
-  color: white;
-  margin: 5px;
-}
-.weather-data {
-  margin-left: 7px;
-  margin-right: 20px;
-}
-#temp {
-  font-size: 32px;
-  margin: 0;
-}
-#today {
-  font-size: 12px;
-  padding-top: 7px;
-}
-.weather-image {
-  margin: 8px 0 0 20px;
-}
-
 /* footer css */
 footer {
   display: flex;
   height: 100px;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
 }

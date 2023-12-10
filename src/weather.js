@@ -18,7 +18,7 @@ async function getWeatherData() {
 }
 
 // 오늘 날짜 출력
-const today = new Date().toDateString().slice(4);
+const today = new Date().toLocaleDateString("ko-KR");
 
 (async () => {
   const weatherData = await getWeatherData();
