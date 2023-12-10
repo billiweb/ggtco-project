@@ -186,9 +186,10 @@ main {
   margin: 7px;
 }
 
-#artwork {
+.album {
   width: 150px;
   height: 150px;
+  background-image: url("/images/artwork.jpg");
   background-size: cover;
 }
 
