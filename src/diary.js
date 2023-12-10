@@ -160,6 +160,10 @@ const editDiary = async (id) => {
 
       // 저장 작업 완료 후 모달 창 닫기
       diaryModal.style.display = "none";
+
+      // 저장 후에 입력 필드 초기화
+      document.querySelector("#title").value = "";
+      document.querySelector("#content").value = "";
     });
   } catch (error) {
     console.log("에러가 발생했어요. 잠시 후 다시 시도해주세요.");
