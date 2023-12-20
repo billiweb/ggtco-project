@@ -22,7 +22,7 @@ header {
 
 header img {
   width: 250px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 main {
@@ -140,10 +140,16 @@ main {
   cursor: pointer;
 }
 
-#imgPreview img {
+.iconImage {
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+.previewImage {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
 }
 
 #image {
@@ -342,6 +348,12 @@ footer {
 
 #diaryList .diaryListBottom {
   border-bottom: 1px dotted black;
+}
+
+#diaryList img {
+  width: 500px;
+  height: 280px;
+  object-fit: cover;
 }
 
 #diaryList H3 {

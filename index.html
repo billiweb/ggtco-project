@@ -14,7 +14,8 @@
       </header>
       <!-- main -->
       <main>
-        <div class="left-column">
+        <!-- Left Column -->
+        <section class="left-column">
           <img src="/images/profile_img.jpeg" alt="profile" />
           <h3>심비트리</h3>
           <p class="profile-text">식물 수집가 심비트리입니다</p>
@@ -22,9 +23,10 @@
           <p>
             🐤 <a href="https://www.naver.com" target="_blank">simbitree</a>
           </p>
-        </div>
+        </section>
 
-        <div class="main-column">
+        <!-- Main Column -->
+        <section class="main-column">
           <div class="main-top-area">
             <p><strong>심비트리님</strong>의 다이어리</p>
             <button id="write">글 작성하기</button>
@@ -38,7 +40,11 @@
               <div class="modal-wrapper">
                 <label for="image">
                   <div id="imgPreview">
-                    <img src="/images/icon_image.png" alt="icon_image" />
+                    <img
+                      src="/images/icon_image.png"
+                      alt="icon_image"
+                      class="iconImage"
+                    />
                   </div>
                 </label>
                 <input type="file" name="image" id="image" accept="image/*" />
@@ -67,9 +73,10 @@
           <div class="main-bottom-area">
             <div id="diaryList"></div>
           </div>
-        </div>
+        </section>
 
-        <div class="right-column">
+        <!-- Right Column -->
+        <aside class="right-column">
           <div class="music-area">
             <p>My Music Player</p>
             <audio id="my-music">
@@ -99,7 +106,7 @@
               명언 가져오기
             </button>
           </div>
-        </div>
+        </aside>
       </main>
       <!-- footer -->
       <footer>
